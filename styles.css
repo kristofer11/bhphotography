@@ -1,0 +1,13 @@
+.home-img {
+    width:100%;
+}
+
+.home-card img{
+    width: 100%;
+}
+
+nav {
+    background-color: #ffddcc88;
+    border-radius: 3px;
+    border: 1px solid #06397088;
+}

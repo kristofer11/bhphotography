@@ -9,30 +9,49 @@
     <title>Brittany Herzog Photography</title>
 </head>
 <body>
-   <nav class="navbar navbar-expand-sm sticky-top">
+
+   <nav class="navbar navbar-expand-sm navbar-light sticky-top">
         <div class="container">
-            <div class="navbar-brand">
+            <a class="navbar-brand mr-sm-5" href="#">
                 <p class="mb-0">Brittany Herzog</p>
                 <p>Photography</p>
-            </div>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="bhNavbar">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bhNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="bhNavbar">
+            <div class="collapse navbar-collapse justify-content-sm-end" id="bhNavbar">
                 <ul class="navbar-nav">
-                    <li class="nav-item active"><a href="#">Home</a> </li>
-                    <li class="nav-item pl-5"><a href="#"> About</a></li>
-                    <li class="nav-item pl-5"><a href="#">Landscapes</a></li>
-                    <li class="nav-item pl-5"><a href="#"> Aerial Video</a></li>
+                    <li class="nav-item"><a href="#">Home</a> </li>
+                    <li class="nav-item pl-sm-5"><a href="#"> About</a></li>
+                    <li class="nav-item pl-sm-5"><a href="#">Gallery</a></li>
+<!-- Add sub-nav here to include "landscape", "Aerial Video", and "pets(or lifestyle?)" -->
+                    <li class="nav-item pl-sm-5"><a href="#">Instagram</a></li>
+                    <li class="nav-item pl-sm-5"><a href="#"> Contact</a></li>
+                    <li class="nav-item pl-sm-5"><a href="#"> Shop</a></li>
                 </ul>
             </div>
         </div>
    </nav>
 
+   <img class="home-img" src="haystack.jpg" alt="Beach sunset behind haystack rock">
 
-    
+<!-- Need to make these three thumbnails link to "landscapes", "About Me", and "Aerial Footage" pages. Also, these are filler images. Will use Brittany's best work here. Use photo of her with dogs or her with jake for "About Me" thumbnail (middle) -->
+
+   <div class="container">
+        <div class="row">
+            <div class="col-sm-4 home-card"><img class="img-thumbnail" src="cabin.jpg" alt=""></div>
+            <div class="col-sm-4 home-card"><img class="img-thumbnail" src="mountain.jpg" alt=""></div>
+            <div class="col-sm-4 home-card"><img class="img-thumbnail" src="pumpkins.jpg" alt=""></div>
+        </div>
+   </div>
+
+<!-- Add footer to include social media (and contact form?) -->
+   <footer class="">
+   </footer>
+
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
