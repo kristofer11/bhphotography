@@ -1,13 +1,43 @@
-.home-img {
-    width:100%;
+nav {
+    background-color: #cbdbd955;
 }
 
-.home-card img{
+nav a {
+    color: #20494d;
+    font-weight: 500;
+}
+
+.home-img-container .home-img {
     width: 100%;
 }
 
-nav {
-    background-color: #ffddcc88;
-    border-radius: 3px;
-    border: 1px solid #06397088;
+.link-div-parent {
+    width: 100%;
+}
+
+a,.homelink {
+    width: 100%;
+}
+
+.link-div {
+    aspect-ratio: 1 / 1;
+/* NEED TO FIGURE OUT HOW TO SIZE THESE SO THAT THEY DON'T OVERLAP AND ARE WIDE ENOUGH ON SMALL SCREENS.     */
+    height: 100%;
+    background-color: pink;
+    color: white;
+}
+
+.link-div-1 {
+    background-image: url("img/cabin-sq.jpg");
+    background-size: contain;
+}
+
+.link-div-2 {
+    background-image: url("img/bh-looking-at-lake-sq.jpg");
+    background-size: contain;
+}
+
+.link-div-3 {
+    background-image: url("img/haystack-sq.jpg");
+    background-size: contain;
 }

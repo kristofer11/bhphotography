@@ -10,7 +10,7 @@
 </head>
 <body>
 
-   <nav class="navbar navbar-expand-sm navbar-light sticky-top">
+   <nav class="navbar navbar-expand-md navbar-light sticky-top">
         <div class="container">
             <a class="navbar-brand mr-sm-5" href="#">
                 <p class="mb-0">Brittany Herzog</p>
@@ -21,7 +21,7 @@
             </button>
             <div class="collapse navbar-collapse justify-content-sm-end" id="bhNavbar">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a href="#">Home</a> </li>
+                    <li class="nav-item "><a href="#">Home</a> </li>
                     <li class="nav-item pl-sm-5"><a href="#"> About</a></li>
                     <li class="nav-item pl-sm-5"><a href="#">Gallery</a></li>
 <!-- Add sub-nav here to include "landscape", "Aerial Video", and "pets(or lifestyle?)" -->
@@ -33,20 +33,63 @@
         </div>
    </nav>
 
-   <img class="home-img" src="haystack.jpg" alt="Beach sunset behind haystack rock">
+
+<!-- MAKE THIS A CAROUSEL!! -->
+   <div class="conainer-fluid home-img-container">
+        <div class="row justify-content-center">
+            <div class="col-xl-8">
+                <img src="img/coast-looking-in2.jpg" class="home-img" alt="Waves breaking on Oregon coast beach">                
+            </div>
+               
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col mt-3">
+                <h1 class="text-center">Brittany Herzog Photography</h1>
+                <p class="text-center mt-1">Welcome to the official home of Brittany Herzog Photography. I'll put more text here later. I could have used some lorem, but I am killing some time and giving my brain a rest while I type...enjoy!</p>                
+            </div>
+
+        </div>
+    </div>
+
 
 <!-- Need to make these three thumbnails link to "landscapes", "About Me", and "Aerial Footage" pages. Also, these are filler images. Will use Brittany's best work here. Use photo of her with dogs or her with jake for "About Me" thumbnail (middle) -->
 
    <div class="container">
         <div class="row">
-            <div class="col-sm-4 home-card"><img class="img-thumbnail" src="cabin.jpg" alt=""></div>
-            <div class="col-sm-4 home-card"><img class="img-thumbnail" src="mountain.jpg" alt=""></div>
-            <div class="col-sm-4 home-card"><img class="img-thumbnail" src="pumpkins.jpg" alt=""></div>
+            <div class="col-sm-4">
+                <a class="btn home-link" href="#">
+                    <div class="link-div link-div-1 d-flex justify-content-center">
+                        <h1 class="align-self-center">LANDSCAPE</h1>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a class="btn home-link" href="#">
+                    <div class="link-div link-div-2 d-flex justify-content-center">
+                        <h1 class="align-self-center">ABOUT ME</h1>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a class="btn home-link" href="#">
+                    <div class="link-div link-div-3 d-flex justify-content-center">
+                        <h1 class="align-self-center">DRONE</h1>
+                    </div>
+                </a>
+            </div>
         </div>
    </div>
 
+
+
+
 <!-- Add footer to include social media (and contact form?) -->
    <footer class="">
+
    </footer>
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
