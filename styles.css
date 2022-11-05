@@ -7,10 +7,6 @@ nav a {
     font-weight: 500;
 }
 
-.home-img-container .home-img {
-    width: 100%;
-}
-
 .link-div-parent {
     width: 100%;
 }
@@ -21,10 +17,12 @@ a,.homelink {
 
 .link-div {
     aspect-ratio: 1 / 1;
-/* NEED TO FIGURE OUT HOW TO SIZE THESE SO THAT THEY DON'T OVERLAP AND ARE WIDE ENOUGH ON SMALL SCREENS.     */
     height: 100%;
     background-color: pink;
     color: white;
+    border: 5px solid #cbdbd9;
+    border-radius: 5% 0;
+    box-shadow: 10px 10px #cbdbd955;
 }
 
 .link-div-1 {
@@ -40,4 +38,17 @@ a,.homelink {
 .link-div-3 {
     background-image: url("img/haystack-sq.jpg");
     background-size: contain;
+}
+
+#cabin-img-carousel {
+    aspect-ratio: 4/3;
+    object-fit: contain;
+}
+
+#homeCarousel {
+    position: sticky;
+}
+
+a:hover {
+    transform: scale(1.2);
 }
