@@ -1,10 +1,19 @@
-nav {
-    background-color: #cbdbd955;
+
+nav {    
+    background-color: #cbdbd988;
 }
 
-nav a {
-    color: #20494d;
+/* 
+Color not working on nav-bar links... */
+
+.navbar-nav .nav-item .nav-link {
+    color: #20494d; 
     font-weight: 500;
+}
+
+.navbar-brand p {
+    color: #20494d;  
+    font-weight: 777;
 }
 
 .link-div-parent {
@@ -17,13 +26,14 @@ a,.homelink {
 
 .link-div {
     aspect-ratio: 1 / 1;
-    height: 100%;
-    background-color: pink;
+    min-height: 233px;
     color: white;
     border: 5px solid #cbdbd9;
     border-radius: 5% 0;
     box-shadow: 10px 10px #cbdbd955;
 }
+
+
 
 .link-div-1 {
     background-image: url("img/cabin-sq.jpg");
@@ -50,5 +60,5 @@ a,.homelink {
 }
 
 a:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
