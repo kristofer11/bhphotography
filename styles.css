@@ -3,9 +3,6 @@ nav {
     background-color: #cbdbd988;
 }
 
-/* 
-Color not working on nav-bar links... */
-
 .navbar-nav .nav-item .nav-link {
     color: #20494d; 
     font-weight: 500;
