@@ -1,0 +1,17 @@
+/* .row {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+/* .row .column {
+    flex: 33.3%;
+    width: auto;
+    overflow: hidden;
+    padding: 0 4px;
+    height: 100%
+} */
+
+.row .column img {
+    width: 100%;
+}
+

@@ -57,6 +57,10 @@ a:hover {
     font-size: 3vw;
 }
 
+.item img{
+    max-height: 22vw;
+}
+
 @media screen and (max-width: 768px) {
     .home-link h3 {
         font-size: 55px;
