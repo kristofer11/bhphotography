@@ -23,14 +23,12 @@ a,.homelink {
 
 .link-div {
     aspect-ratio: 1 / 1;
-    min-height: 233px;
+    min-height: 23vw;
     color: white;
     border: 5px solid #cbdbd9;
     border-radius: 5% 0;
     box-shadow: 10px 10px #cbdbd955;
 }
-
-
 
 .link-div-1 {
     background-image: url("img/cabin-sq.jpg");
@@ -47,15 +45,20 @@ a,.homelink {
     background-size: contain;
 }
 
-#cabin-img-carousel {
-    aspect-ratio: 4/3;
-    object-fit: contain;
-}
-
 #homeCarousel {
     position: sticky;
 }
 
 a:hover {
     transform: scale(1.1);
+}
+
+.home-link h3 {
+    font-size: 3vw;
+}
+
+@media screen and (max-width: 768px) {
+    .home-link h3 {
+        font-size: 55px;
+    }    
 }
