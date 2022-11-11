@@ -15,7 +15,7 @@
 
     <nav class="navbar navbar-expand-md navbar-light sticky-top">
         <div class="container">
-            <a class="navbar-brand mr-sm-5 col-2" href="#">
+            <a class="navbar-brand mr-sm-5 col-2" href="index.html">
                 <p class="mb-0">Brittany Herzog</p>
                 <p>Photography</p>
             </a>
@@ -25,20 +25,19 @@
 
             <div class="collapse navbar-collapse justify-content-sm-end" id="bhNavbar">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a> </li>
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a> </li>
                     <div class="dropdown">
                         <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Galleries
                         </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="landscape.html">Landscape</a>
-                            <a class="dropdown-item active" href="#">Drone</a>
-                            <a class="dropdown-item" href="#">Lifestyle</a>
-                        </div>
-                    </div>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="landscape.html">Landscape</a></li>
+                            <li><a class="dropdown-item active" href="#">Aerial Footage</a></li>
+                            <li><a class="dropdown-item" href="#">Pets</a></li>
+                        </ul>
+                    </div>                  
                     <li class="nav-item ml-md-2"><a class="nav-link" href="#"> About</a></li>                    
-<!-- Add sub-nav here to include "landscape", "Aerial Video", and "pets(or lifestyle?)" -->
-                    <li class="nav-item ml-md-2"><a class="nav-link" href="https://www.instagram.com/brittanymarie818/?hl=en">Instagram</a></li>
+                    <li class="nav-item ml-md-2"><a class="nav-link" href="https://www.instagram.com/brittanymarie818/?hl=en" target="_blank">Instagram</a></li>
                     <li class="nav-item ml-md-2"><a class="nav-link" href="#"> Contact</a></li>
                     <li class="nav-item ml-md-2"><a class="nav-link" href="#"> Shop</a></li>
                 </ul>
@@ -50,52 +49,89 @@
         Drone
    </h1>
 
-
+   <h6 class="text-center">Choose from the videos below - and watch in full-screen for best experience!</h6>
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col-md-6 mt-2">
                 <a role="button" data-toggle="modal" data-target="#indianBeachModal">
-                    <img src="img/indian-beach-vid.png" width="300px" alt="">
+                    <img class="vid-thumbnail" src="img/indian-beach-vid.png" alt="Link to drone video of Indian Beach">
                 </a>
             </div>
-            <div class="col">
+            <div class="col-md-6 mt-2">
                 <a role="button" data-toggle="modal" data-target="#pacificModal">
-                    <img src="img/pacific-vid.png" width="300px" alt="">
+                    <img class="vid-thumbnail" src="img/pacific-vid.png" width="300px" alt="Link to drone video of the pacific coastline">
                 </a>
             </div>
- 
-        </div>
-        <div class="row">
-            <div class="embed-responsive embed-responsive-16by9 col-md-5 m-2">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/N7maY9RKXyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+            <div class="col-md-6 mt-2">
+                <a role="button" data-toggle="modal" data-target="#fallModal">
+                    <img class="vid-thumbnail" src="img/fall-vid.png" width="300px" alt="Link to drone video of the pacific coastline">
+                </a>
             </div>
-            <div class="embed-responsive embed-responsive-16by9 col-md-6 m-2">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/gTZ05TXatLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="embed-responsive embed-responsive-16by9 col-md-6 m-2">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/njBSebmWmSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="embed-responsive embed-responsive-16by9 col-md-5 m-2">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/xbQrcxx5RHE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="col-md-6 mt-2">
+                <a role="button" data-toggle="modal" data-target="#barclayModal">
+                    <img class="vid-thumbnail" src="img/barclay-vid.png" width="300px" alt="Link to drone video of the pacific coastline">
+                </a>
             </div>
         </div>
         <div class="row">
             <div class="col text-center mt-4">
                 <h3>Visit Brittany's <a href="https://www.youtube.com/channel/UCVhJ3Q_sspghQcEg1dQxMag"><strong>YouTube Channel</strong></a> to see more!</p>
                 </h3>
+            </div>
         </div>
     </div>
 
-    <div id="indianBeachModal" class="modal fade drone-modal" role="dialog">
-        <div class="modal-dialog modal-xl">
+    <div id="indianBeachModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-xl border-dark">
             <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
+                <div class="modal-body p-0">
                     <div class="item active">
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe width="999" src="https://www.youtube.com/embed/XyrzEoDZmCY?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="pacificModal" class="modal fade drone-modal" role="dialog">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="item active">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/njBSebmWmSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="fallModal" class="modal fade drone-modal" role="dialog">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="item active">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/gTZ05TXatLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="barclayModal" class="modal fade drone-modal" role="dialog">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="item active">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/xbQrcxx5RHE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                  
                         </div>
                     </div>
                 </div>
@@ -108,12 +144,12 @@
         <div class="container">
             <div class="row p-5 justify-content-center">
                 <div class="mx-4">
-                    <a href="https://www.instagram.com/brittanymarie818/?hl=en">
+                    <a href="https://www.instagram.com/brittanymarie818/?hl=en" target="_blank">
                         <img src="img/icons8-instagram-old-48.png" alt="Instagram Logo">
                     </a>                    
                 </div>
                 <div class="mx-4">
-                    <a href="https://www.youtube.com/channel/UCVhJ3Q_sspghQcEg1dQxMag">
+                    <a href="https://www.youtube.com/channel/UCVhJ3Q_sspghQcEg1dQxMag" target="_blank">
                         <img src="img/icons8-youtube-logo-48.png" alt="YouTube Logo">
                     </a>                    
                 </div>
@@ -123,7 +159,7 @@
                     icons by <a target="_blank" href="https://icons8.com">Icons8</a>                    
                 </div>
             </div>       
-       </div>                   
+        </div>                   
    </footer>
 
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -132,11 +168,11 @@
 
    <script>
     $(function(){
-  $('.modal').on('hidden.bs.modal', function (e) {
-    $iframe = $(this).find("iframe");
-    $iframe.attr("src", $iframe.attr("src"));
-  });
-});
+        $('.modal').on('hidden.bs.modal', function (e) {
+            $iframe = $(this).find("iframe");
+            $iframe.attr("src", $iframe.attr("src"));
+            });
+        });
    </script>
 
 </body>

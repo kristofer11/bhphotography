@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css" />
     <title>Brittany Herzog Photography</title>
 </head>
-<body>
+<body class="d-flex flex-column vh-100">
 
    <nav class="navbar navbar-expand-md navbar-light sticky-top">
         <div class="container">
@@ -29,15 +29,14 @@
                         <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Galleries
                         </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="landscape.html">Landscape</a>
-                            <a class="dropdown-item" href="drone.html">Drone</a>
-                            <a class="dropdown-item" href="#">Lifestyle</a>
-                        </div>
-                    </div>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="landscape.html">Landscape</a></li>
+                            <li><a class="dropdown-item" href="drone.html">Aerial Footage</a></li>
+                            <li><a class="dropdown-item" href="#">Pets</a></li>
+                        </ul>
+                    </div>                  
                     <li class="nav-item ml-md-2"><a class="nav-link" href="#"> About</a></li>                    
-<!-- Add sub-nav here to include "landscape", "Aerial Video", and "pets(or lifestyle?)" -->
-                    <li class="nav-item ml-md-2"><a class="nav-link" href="https://www.instagram.com/brittanymarie818/?hl=en">Instagram</a></li>
+                    <li class="nav-item ml-md-2"><a class="nav-link" href="https://www.instagram.com/brittanymarie818/?hl=en" target="_blank">Instagram</a></li>
                     <li class="nav-item ml-md-2"><a class="nav-link" href="#"> Contact</a></li>
                     <li class="nav-item ml-md-2"><a class="nav-link" href="#"> Shop</a></li>
                 </ul>
@@ -83,51 +82,53 @@
         </div>
     </div>
 
-<!-- Add footer to include social media (and contact form?) -->
-   <footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <a class="btn home-link" href="landscape.html">
+                    <div class="link-div link-div-1 d-flex justify-content-center">
+                        <h3 class="align-self-center display-xs-1">LANDSCAPE</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a class="btn home-link" href="#">
+                    <div class="link-div link-div-2 d-flex justify-content-center">
+                        <h3 class="align-self-center">ABOUT ME</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a class="btn home-link" href="#">
+                    <div class="link-div link-div-3 d-flex justify-content-center">
+                        <h3 class="align-self-center">FROM ABOVE: Aerial Footage </h3>
+                    </div>
+                </a>
+            </div>
+        </div>                   
+    </div>
+
+    <footer class="footer mt-auto">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <a class="btn home-link" href="landscape.html">
-                        <div class="link-div link-div-1 d-flex justify-content-center">
-                            <h3 class="align-self-center display-xs-1">LANDSCAPE</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a class="btn home-link" href="#">
-                        <div class="link-div link-div-2 d-flex justify-content-center">
-                            <h3 class="align-self-center">ABOUT ME</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a class="btn home-link" href="#">
-                        <div class="link-div link-div-3 d-flex justify-content-center">
-                            <h3 class="align-self-center">DRONE</h3>
-                        </div>
-                    </a>
-                </div>
-            </div> 
-            <div class="row p-5 justify-content-center">
-                <div class="mx-4">
-                    <a href="https://www.instagram.com/brittanymarie818/?hl=en">
+            <div class="row justify-content-center m-4">
+                <div>
+                    <a href="https://www.instagram.com/brittanymarie818/?hl=en" target="_blank">
                         <img src="img/icons8-instagram-old-48.png" alt="Instagram Logo">
                     </a>                    
                 </div>
                 <div class="mx-4">
-                    <a href="https://www.youtube.com/channel/UCVhJ3Q_sspghQcEg1dQxMag">
+                    <a href="https://www.youtube.com/channel/UCVhJ3Q_sspghQcEg1dQxMag" target="_blank">
                         <img src="img/icons8-youtube-logo-48.png" alt="YouTube Logo">
                     </a>                    
-                </div>
-            </div>    
+                </div>                
+            </div>
             <div class="row justify-content-center">
                 <div>
                     icons by <a target="_blank" href="https://icons8.com">Icons8</a>                    
                 </div>
-            </div>                    
+            </div>             
         </div>
-   </footer>
+    </footer>
 
     <!-- <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>

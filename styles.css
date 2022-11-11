@@ -3,7 +3,9 @@ nav {
     background-color: #cbdbd988;
 }
 
-.navbar-nav .nav-item .nav-link {
+.navbar-nav .nav-item .nav-link,
+.dropdown-toggle,
+.dropdown-item {
     color: #20494d; 
     font-weight: 500;
 }
@@ -26,12 +28,12 @@ a,.homelink {
     min-height: 23vw;
     color: white;
     border: 5px solid #cbdbd9;
-    border-radius: 5% 0;
+    border-radius: 5%;
     box-shadow: 10px 10px #cbdbd955;
 }
 
 .link-div-1 {
-    background-image: url("img/cabin-sq.jpg");
+    background-image: url("img/haystack-sq.jpg");
     background-size: contain;
 }
 
@@ -41,7 +43,7 @@ a,.homelink {
 }
 
 .link-div-3 {
-    background-image: url("img/haystack-sq.jpg");
+    background-image: url("img/indian-beach-vid-sq.png");
     background-size: contain;
 }
 
@@ -55,6 +57,7 @@ a:hover {
 
 .home-link h3 {
     font-size: 3vw;
+    background-color: rgba(0, 0, 0, .33);
 }
 
 .item img{
