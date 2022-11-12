@@ -45,38 +45,48 @@
         </div>
    </nav>
 
-   <h1 class="text-center text-danger"> 
-        Drone
-   </h1>
 
-   <h6 class="text-center">Choose from the videos below - and watch in full-screen for best experience!</h6>
+   <div class="container p-0">
+        <div class="row justify-content-center">
+            <div class="col-xl-10 p-0">
+                <video width="100%" src="img/canon-beach-highlights.mp4" controls autoplay></video>    
+            </div>
+        </div>
+   </div>
+   <h1 class="text-center mt-3 mb-2">Aerial Video</h1>
+   <h3 class="text-center">Choose a video below or visit Brittany's <a href="https://www.youtube.com/channel/UCVhJ3Q_sspghQcEg1dQxMag"><strong>YouTube Channel</strong></a>.</h3>
+   </h3>
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 mt-2">
-                <a role="button" data-toggle="modal" data-target="#indianBeachModal">
+        <div class="row my-4">
+            <div class="col-6 col-md-4 mt-2">
+                <a class="drone-vid" role="button" data-toggle="modal" data-target="#indianBeachModal">
                     <img class="vid-thumbnail" src="img/indian-beach-vid.png" alt="Link to drone video of Indian Beach">
                 </a>
             </div>
-            <div class="col-md-6 mt-2">
-                <a role="button" data-toggle="modal" data-target="#pacificModal">
+            <div class="col-6 col-md-4 mt-2">
+                <a class="drone-vid" role="button" data-toggle="modal" data-target="#pacificModal">
                     <img class="vid-thumbnail" src="img/pacific-vid.png" width="300px" alt="Link to drone video of the pacific coastline">
                 </a>
             </div>
-            <div class="col-md-6 mt-2">
-                <a role="button" data-toggle="modal" data-target="#fallModal">
+            <div class="col-6 col-md-4 mt-2">
+                <a class="drone-vid" ole="button" data-toggle="modal" data-target="#fallModal">
                     <img class="vid-thumbnail" src="img/fall-vid.png" width="300px" alt="Link to drone video of the pacific coastline">
                 </a>
             </div>
-            <div class="col-md-6 mt-2">
-                <a role="button" data-toggle="modal" data-target="#barclayModal">
+            <div class="col-6 col-md-4 mt-2">
+                <a class="drone-vid" role="button" data-toggle="modal" data-target="#barclayModal">
                     <img class="vid-thumbnail" src="img/barclay-vid.png" width="300px" alt="Link to drone video of the pacific coastline">
                 </a>
             </div>
-        </div>
-        <div class="row">
-            <div class="col text-center mt-4">
-                <h3>Visit Brittany's <a href="https://www.youtube.com/channel/UCVhJ3Q_sspghQcEg1dQxMag"><strong>YouTube Channel</strong></a> to see more!</p>
-                </h3>
+            <div class="col-6 col-md-4 mt-2">
+                <a class="drone-vid" role="button" data-toggle="modal" data-target="#skykomishModal">
+                    <img class="vid-thumbnail" src="img/skykomish-vid.png" width="300px" alt="Link to drone video of the pacific coastline">
+                </a>
+            </div>
+            <div class="col-6 col-md-4 mt-2">
+                <a class="drone-vid" role="button" data-toggle="modal" data-target="#springModal">
+                    <img class="vid-thumbnail" src="img/spring-vid.png" width="300px" alt="Link to drone video of the pacific coastline">
+                </a>
             </div>
         </div>
     </div>
@@ -136,13 +146,40 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
+    <div id="skykomishModal" class="modal fade drone-modal" role="dialog">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="item active">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/3uSx7lKmlgw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="springModal" class="modal fade drone-modal" role="dialog">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="item active">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/8Z3in_qfgP8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+                        </div>                  
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
    <footer class="footer mt-auto">
         <div class="container">
-            <div class="row p-5 justify-content-center">
+            <div class="row pt-5 pb-1 justify-content-center">
                 <div class="mx-4">
                     <a href="https://www.instagram.com/brittanymarie818/?hl=en" target="_blank">
                         <img src="img/icons8-instagram-old-48.png" alt="Instagram Logo">
@@ -155,7 +192,7 @@
                 </div>
             </div>    
             <div class="row justify-content-center">
-                <div>
+                <div class="m-0">
                     icons by <a target="_blank" href="https://icons8.com">Icons8</a>                    
                 </div>
             </div>       
