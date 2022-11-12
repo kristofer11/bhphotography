@@ -54,12 +54,15 @@
         </div>
    </div> -->
 
-   <div class="container">
+   <!-- <div class="container">
         <div class="row justify-content-center main-vid-div">
            <iframe class="main-drone-video" width="560" height="315" src="https://www.youtube.com/embed/yIUaG4oL45E?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope" allowfullscreen muted></iframe>            
         </div>
-   </div>
+   </div> -->
 
+   <div class="iframe-container">
+    <div id="player"></div>
+  </div>
 
    <h1 class="text-center mt-3 mb-2">Aerial Video</h1>
    <h3 class="text-center">Choose a video below or visit Brittany's <a href="https://www.youtube.com/channel/UCVhJ3Q_sspghQcEg1dQxMag"><strong>YouTube Channel</strong></a>.</h3>
@@ -221,18 +224,33 @@
         });
    </script>
 
-   <script>
+<script>
+    // 2. This code loads the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+  
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  
+    // 3. This function creates an <iframe> (and YouTube player)
+    //    after the API code downloads.
     var player;
-        function onYouTubeIframeAPIReady() {
-            player = new YT.Player('player', {
-            width: '100%',
-            videoId: 'yIUaG4oL45E',
-            playerVars: { 'autoplay': 1, 'playsinline': 1 },
-            events: {
-                'onReady': onPlayerReady
-            }
-            });
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        width: '100%',
+        videoId: 'yIUaG4oL45E',
+        playerVars: { 'autoplay': 1, 'playsinline': 1 },
+        events: {
+          'onReady': onPlayerReady
         }
-   </script>
+      });
+    }
+  
+    // 4. The API will call this function when the video player is ready.
+    function onPlayerReady(event) {
+       event.target.mute();
+      event.target.playVideo();
+    }
+  </script>
 </body>
 </html>
