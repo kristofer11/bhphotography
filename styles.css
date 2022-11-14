@@ -102,3 +102,8 @@ a:hover {
   #main-about-img {
     max-width: 100%;
   }
+
+  .signature {
+    font-family: 'Dancing Script', cursive;
+    font-size: 112%;
+  }
