@@ -25,12 +25,3 @@
     border: 1px solid #20494d;
 }
 
-.main-vid-div {
-    aspect-ratio: 16 / 9;
-}
-
-.main-drone-video {
-    width: 100vw;
-    height: auto;
-}
-

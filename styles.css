@@ -42,7 +42,7 @@ a,.homelink {
     color: white;
     border: 5px solid #cbdbd9;
     border-radius: 5%;
-    box-shadow: 10px 10px #cbdbd955;
+    box-shadow: 6px 4px 4px #20494d;
 }
 
 .link-div-1 {
@@ -73,9 +73,9 @@ a:hover {
     background-color: rgba(0, 0, 0, .33);
 }
 
-.item img{
+/* .item img{
     max-height: 22vw;
-}
+} */
 
 @media screen and (max-width: 768px) {
     .home-link h3 {
@@ -107,3 +107,21 @@ a:hover {
     font-family: 'Dancing Script', cursive;
     font-size: 112%;
   }
+
+ #gallery > div > img, 
+ .vid-thumbnail {
+    border: 2px solid #cbdbd9;
+    margin-bottom: 8px;
+    border-radius: 2%;
+    box-shadow: 6px 4px 4px #20494d;
+ }
+
+ #gallery > div > img:hover {
+    transform: scale(1.02);
+ }
+
+ .drone-main-vid,
+ .about-me-img,
+ .landscape-main {
+    box-shadow: 6px 4px 4px #20494d;
+ }
