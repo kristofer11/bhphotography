@@ -75,11 +75,6 @@ a:hover {
     max-height: 22vw;
 } */
 
-@media screen and (max-width: 768px) {
-    .home-link h3 {
-        font-size: 55px;
-    }    
-}
 
 .iframe-container{
     position: relative;
@@ -126,6 +121,13 @@ a:hover {
     border: 3px solid #20494d;
 }
 
+.modal-body {
+    padding: 0;
+}
+
+.modal-header {
+    padding: 0;
+}
 
  .drone-main-vid,
  #main-about-img,
@@ -133,3 +135,9 @@ a:hover {
  .landscape-main {
     box-shadow: 6px 4px 4px #20494d;
  }
+
+@media screen and (max-width: 768px) {
+    .home-link h3 {
+        font-size: 55px;
+    }    
+}
