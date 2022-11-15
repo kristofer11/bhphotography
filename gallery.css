@@ -19,9 +19,4 @@
     width: 100%;
 }
 
-.drone-vid img:hover {
-    transform: scale(1.03);
-    opacity: .8;
-    border: 1px solid #20494d;
-}
 
