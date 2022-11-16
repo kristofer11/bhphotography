@@ -19,8 +19,8 @@
     <nav class="navbar navbar-expand-md navbar-light sticky-top">
         <div class="container">
             <a class="navbar-brand mr-sm-5 col-2" href="index.html">
-                <p class="mb-0">Brittany Herzog</p>
-                <p>Photography</p>
+                <p class="mb-n3" id="brand">Brittany Herzog</p>
+                <p class="mt-n1" id="brand">Photography</p>
             </a>
             <button class="navbar-toggler ml-auto col-xs-2" type="button" data-toggle="collapse" data-target="#bhNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -61,19 +61,96 @@
         </div>
 
         <div class="row text-center">
-            <div class="col-4 mt-3">
+            <div class="col-sm-4 d-none d-sm-block mt-3 ">
                 <img class="about-me-img" width="100%" src="img/scooter.jpg" alt="Jake and Brittany on a scooter.">
             </div>
-            <div class="col-4 mt-3">
+            <div class="col-sm-4 d-none d-sm-block mt-3">
                 <img class="about-me-img" width="100%" src="img/gen-smiling.jpg" alt="Small dog smiling.">
             </div>
-            <div class="col-4 mt-3">
+            <div class="col-sm-4 d-none d-sm-block mt-3">
                 <img class="about-me-img" width="100%" src="img/brit-flower-field.jpg" alt="Brittany standing in flower field.">
             </div>
         </div>
     </div>
 
 <!-- CONTACT FORM GOES HERE -->
+    <div class="container mt-5">
+        <div class="row row-content">
+            <div class="col-12">
+                <h2 class="text-center text-danger">Contact</h2>
+                <hr />
+                <h4 class="d-none d-sm-block">Whether it is to book a session or inquire about purchasing an image, I would love to hear from you! Please fill out the form to get in touch.</h4>
+                <hr class="d-none d-sm-block">
+            </div>
+            <div class="col-md-10">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-form-label col-md-2"for="firstName">First Name </label>
+                        <div class="col-md-10" >
+                            <input class="form-control" type="text" id="firstName" name="firstName" placeholder="First Name" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-form-label col-md-2" for="lastName">Last Name</label> 
+                        <div class="col-md-10">
+                            <input class="form-control" type="text" id="lastName" name="LastName" placeholder="Last Name" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-form-label col-md-2" for="areaCode">Contact Tel.</label> 
+                        <div class="col-5 col-md-3">
+                            <input class="form-control" type="tel" name="areaCode" id="areaCode" placeholder="Area code" />
+                        </div>    
+                        <div class="col-7">
+                            <input class="form-control" type="tel" name="telNum" placeholder="Tel. Number" />
+                        </div>   
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-form-label col-md-2" for="email">Email</label>  
+                        <div class="col-md-10">
+                            <input class="form-control" type="email" id="email" name="email" placeholder="Email">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col offset-md-2">
+                            <span class="text-danger form-label">What type of inquiry is this?</span>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="contactRadios" id="contactPurchase" value="purchase">
+                                <label class="form-check-label" for="contactPurchase">Image purchase</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="contactRadios" id="contactBooking" value="booking">
+                                <label class="form-check-label" for="contactBooking">Book a session</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="contactRadios" id="contactOther" value="otherInquiry">
+                                <label class="form-check-label" for="contactOther">Other</label>
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="feedback" class="col-form-label col-md-2">Message</label> 
+                        <div class="col-md-10">
+                            <textarea class="form-control" name="feedback" rows="8" id="feedback"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="offset-md-2 col-md-10">
+                            <button class="btn btn-primary" type="submit">Send Message</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
 
    <footer class="footer mt-auto">
         <div class="container">
