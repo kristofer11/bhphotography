@@ -19,7 +19,9 @@ nav {
     color: #bc4416;
 }
 
-
+.mainText p {
+    font-size: 1.5rem;
+}
 
 .navbar-nav .nav-item .nav-link,
 .dropdown-toggle,
@@ -106,6 +108,14 @@ a:hover {
     border-radius: 2%;
     box-shadow: 6px 4px 4px #20494d;
  }
+
+article p {
+ font-size: 1.25rem;
+}
+
+.aboutGreeting {
+    font-size: 2.5rem;
+}
 
  #gallery > div > img:hover {
     transform: scale(1.02);
